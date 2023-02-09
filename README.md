@@ -30,6 +30,7 @@ use the following command to check if any modules can be updated: ``npm outdated
 
 In local mode, packages are installed in the **node_modules** directory of the parent directory. If the project has a **package.json** file, then by running: ``npm install`` will install everything the project needs into the **node_modules** folder, creating it if it doesn't already exist. <br>
 
+When you first install a package in a Node.js project, **npm** automatically creates a **package-lock.json** file.
 ___
 
 ## Node.js = Runtime Environment + JavaScript Library 
@@ -45,10 +46,13 @@ ___
 ___
 
 ## ESLint
+To install the package only **for development** (locally) - ``npm install eslint --save-dev`` - because it is not needed in production. <br>
+To create a configuration file locally: ``./node_modules/.bin/eslint –init`` <br>
+Starts ESLint checking the specified file: ``./node_modules/.bin/eslint yourfile.js``. <br>
 
-
-
-
+> One of the most popular linter settings is to use the Airbnb JavaScript Style.
+> > ``npm install --save-dev eslint-config-airbnb``
+> > > and add to your *.eslintrc* file _located at the root of your project_: ``{ "extends": "airbnb" }``
 ___
 
 ## CommonJS modules
