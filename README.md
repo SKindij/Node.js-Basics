@@ -40,7 +40,11 @@ ___
 > > - ``npm install -g n``
 > > - ``n stable``
 
-
+What can Node.js do?
+ + can generate dynamic page content;
+ + can create, open, read, write, delete and close files on the server;
+ + can collect form data;
+ + can add, delete and modify data in your database;
 
 
 ___
