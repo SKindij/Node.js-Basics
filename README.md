@@ -11,7 +11,6 @@ In addition to regular downloads, you can specify any version of a package: ``np
 
 If your code will use **Git** for version control, first create a **Git repository** and then run ``npm init``. Git automatically fills in the following fields for your **package.json file**: ``repository, bugs, and homepage``.
 
-the **package.json** file will contain all dependencies and scripts <br>
 ```javascript
 {
   "name": "SKrollo-app project",       // by default, this is the name of the folder you're in
@@ -25,9 +24,11 @@ the **package.json** file will contain all dependencies and scripts <br>
   "author": "SKindij",                 // optional "Name \<Email\> (Website)"
   "license": "UNLICENSED"             // licensing options https://opensource.org/licenses
 }
-
-
 ```
+
+use the following command to check if any modules can be updated: ``npm outdated`` <br>
+
+In local mode, packages are installed in the **node_modules** directory of the parent directory. If the project has a **package.json** file, then by running: ``npm install`` will install everything the project needs into the **node_modules** folder, creating it if it doesn't already exist. <br>
 
 ___
 
