@@ -3,16 +3,18 @@ topic :radioactive: initial general basics of knowledge about Node.js
 
 
 ## Node Package Manager (NPM)
-
-
+``npm –version`` <br>
+How to Update NPM: ``npm install -g npm@latest`` <br>
 
 
 ___
 
 ## Node.js = Runtime Environment + JavaScript Library 
-
-
-``node –v``
+``node –v`` <br>
+> How to Update Node and NPM to the Latest Version: <br>
+> > - ``npm cache clean -f``
+> > - ``npm install -g n``
+> > - ``n stable``
 
 
 
