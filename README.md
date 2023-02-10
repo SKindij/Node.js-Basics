@@ -60,10 +60,11 @@ Starts ESLint checking the specified file: ``./node_modules/.bin/eslint yourfile
 ___
 
 ## CommonJS modules
+Think of modules the same as JavaScript libraries. It's like a set of features that you want to include in your app. 
 
+In the browser ecosystem, the use of JavaScript modules depends on the ``import`` and ``export`` operators; which load and export **EMCAScript (ES) modules**, respectively. By default, **Node.js** supports a module system called **CommonJS modules** (_treating each JavaScript file as a separate module_). To include (import) a module, the ``require('module name')`` function is used, and the variables and functions themselves are exported from this module using ``module.exports``. Starting with version **Node.js 14.0.0** supports **ES modules**.
 
-
-
+Library authors can simply **enable ES modules** in a Node.js package by changing the file extension from **.js** to **.mjs**.
 
 ___
 
