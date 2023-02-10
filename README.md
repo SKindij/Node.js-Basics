@@ -138,7 +138,11 @@ ___
 > > 3. Send the error to the client
 > > 4. Interrupt the program.
 
+&emsp;In addition to the built-in Error object classes, you can create your own to better represent the types of errors that may occur in your application. For example, you might have a **ValidationError** class for errors that occur when validating user input, a **DatabaseError** class for database operations, a **TimeoutError** class for operations that run out of assigned timeouts, and so on.
 
+&emsp;Basically, **exceptions** are synchronous errors, and **rejections** are asynchronous errors.<br>
+> >   There are four main error reporting strategies in Node.js: <br>
+> >    \* try…catch blocks; * Callbacks; * Promises; * Event emitters.
 
 
 ___
