@@ -75,7 +75,9 @@ Another way to **enable ES modules** in your project is to add a ``"type: module
 Alternatively, you can install and configure a transpiler like **Babel** to compile ES module syntax to CommonJS syntax. Projects like **React** and **Vue** support ES modules because they use Babel under the hood to compile code.
 
 
-One limitation of using ``require()`` is that it loads modules ***synchronously***. _This means that the modules are loaded and processed one after the other._ As you might have guessed, this can cause some performance issues for large-scale applications with hundreds of modules. In this case, ``import`` can outperform ``require()`` because of its ***asynchronous*** behavior.
+One limitation of using ``require()`` is that it loads modules ***synchronously***. _This means that the modules are loaded and processed one after the other._ As you might have guessed, this can cause some performance issues for large-scale applications with hundreds of modules. In this case, ``import`` can outperform ``require()`` because of its ***asynchronous*** behavior. <br>
+However, the synchronous nature of ``require()`` may not pose much of a problem for a small application using a couple of modules. <br>
+Beginners can find it useful and convenient to learn about **ES modules**, as they are becoming the standard format for defining modules in JavaScript, both client-side (_browser_) and server-side (_Node.js_).
 
 
 
