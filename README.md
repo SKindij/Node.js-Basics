@@ -91,26 +91,27 @@ Library authors can simply **enable ES modules** in a Node.js package by changin
 > > >      let hasDeliveryArrived = true;
 > > >      let quantityOrders = 28;
 > > >    doTesting(isElectricity, quantityGoods);
-> > >    doPacking(hasDeliveryArrived, quantityGoods);
+> > >    doPacking(hasDeliveryArrived, quantityOrders);
 > > > ```
-
-
-
-
-
 
 &emsp;Another way to **enable ES modules** in your project is to add a ``"type: module"`` field to the nearest **package.json** file. With this inclusion, Node.js treats all files in this package as ES modules, and you don't have to change the file extension to .mjs.
 
-
-
 &emsp;Alternatively, you can install and configure a transpiler like **Babel** to compile ES module syntax to CommonJS syntax. Projects like **React** and **Vue** support ES modules because they use Babel under the hood to compile code.
-
 
 &emsp;One limitation of using ``require()`` is that it loads modules ***synchronously***. _This means that the modules are loaded and processed one after the other._ As you might have guessed, this can cause some performance issues for large-scale applications with hundreds of modules. In this case, ``import`` can outperform ``require()`` because of its ***asynchronous*** behavior. <br>
 &emsp;However, the synchronous nature of ``require()`` may not pose much of a problem for a small application using a couple of modules. <br>
+
 &emsp;Beginners can find it useful and convenient to learn about **ES modules**, as they are becoming the standard format for defining modules in JavaScript, both client-side (_browser_) and server-side (_Node.js_).
-
-
+| Core Modules |   Description                                              |
+| ------------ | ---------------------------------------------------------- |
+|   http       | creates an HTTP server in Node.js                          |
+|   assert     | set of assertion functions useful for testing              |
+|   fs         | used to handle file system                                 |
+|   path       | includes methods to deal with file paths                   |
+|   process    | provides information and control about the current Node.js process |
+|   os         | provides information about the operating system            |
+|   url        | module provides utilities for URL resolution and parsing   |
+|   querystring| utility used for parsing and formatting URL query strings  |
 
 ___
 
