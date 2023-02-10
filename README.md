@@ -119,14 +119,24 @@ ___
 
 ## An error in Node.js is any instance of the Error object.
 &emsp;**Built-in error classes:**
-  + ReferenceError (an attempt to reach a non-existent reference), 
-  + RangeError (occurs when a numeric variable or parameter is outside the permissible range), 
-  + TypeError (occurs when an invalid type for a variable or parameter), 
-  + URIError (!parameters), 
-  + EvalError (occurs in global function eval) 
-  + SyntaxError (occurs when parsing the source code of the eval function).
+  + ReferenceError (_an attempt to reach a non-existent reference_), 
+  + RangeError (_occurs when a numeric variable or parameter is outside the permissible range_), 
+  + TypeError (_occurs when an invalid type for a variable or parameter_), 
+  + URIError (_!parameters_), 
+  + EvalError (_occurs in global function eval_) 
+  + SyntaxError (_occurs when parsing the source code of the eval function_).
 
+> Here are some **examples of operational errors** in Node.js:
+> > * The API request is not executed for some reason (for example, the server is down or the speed limit is exceeded).
+> > * The user sends invalid data to the server, such as an invalid phone number or email address.
+> > * The connection to the database is lost, possibly due to a faulty network connection.
+> > * The OS cannot fulfill your request to open or write to the file.
 
+> **Handling operational errors** includes considering whether an operation might fail, why it might fail, and what to do if it does.
+> > 1. Report the error to the stack
+> > 2. Repeat the operation
+> > 3. Send the error to the client
+> > 4. Interrupt the program.
 
 
 
