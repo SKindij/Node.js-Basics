@@ -66,6 +66,19 @@ In the browser ecosystem, the use of JavaScript modules depends on the ``import`
 
 Library authors can simply **enable ES modules** in a Node.js package by changing the file extension from **.js** to **.mjs**.
 
+
+
+Another way to **enable ES modules** in your project is to add a ``"type: module"`` field to the nearest **package.json** file. With this inclusion, Node.js treats all files in this package as ES modules, and you don't have to change the file extension to .mjs.
+
+
+
+Alternatively, you can install and configure a transpiler like **Babel** to compile ES module syntax to CommonJS syntax. Projects like **React** and **Vue** support ES modules because they use Babel under the hood to compile code.
+
+
+One limitation of using ``require()`` is that it loads modules ***synchronously***. _This means that the modules are loaded and processed one after the other._ As you might have guessed, this can cause some performance issues for large-scale applications with hundreds of modules. In this case, ``import`` can outperform ``require()`` because of its ***asynchronous*** behavior.
+
+
+
 ___
 
 ## Error in Node.js
