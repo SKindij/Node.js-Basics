@@ -1,15 +1,15 @@
 # basics-of-Node.js
-topic :radioactive: initial general basics of knowledge about Node.js
+&emsp;topic :radioactive: initial general basics of knowledge about Node.js
 
 
 ## Node Package Manager (NPM)
-``npm –version`` <br>
-How to Update NPM: ``npm install -g npm@latest`` <br>
-To get a list of all global packages, you can run the command: ``npm list -g`` <br>
-Updating is also made easy with the launcher: ``npm update <package-name>`` <br>
-In addition to regular downloads, you can specify any version of a package: ``npm install <package-name>@<version>`` <br>
+&emsp;``npm –version`` <br>
+&emsp;How to Update NPM: ``npm install -g npm@latest`` <br>
+&emsp;To get a list of all global packages, you can run the command: ``npm list -g`` <br>
+&emsp;Updating is also made easy with the launcher: ``npm update <package-name>`` <br>
+&emsp;In addition to regular downloads, you can specify any version of a package: ``npm install <package-name>@<version>`` <br>
 
-If your code will use **Git** for version control, first create a **Git repository** and then run ``npm init``. Git automatically fills in the following fields for your **package.json file**: ``repository, bugs, and homepage``.
+&emsp;If your code will use **Git** for version control, first create a **Git repository** and then run ``npm init``. Git automatically fills in the following fields for your **package.json file**: ``repository, bugs, and homepage``.
 
 ```javascript
 {
@@ -26,11 +26,11 @@ If your code will use **Git** for version control, first create a **Git reposito
 }
 ```
 
-use the following command to check if any modules can be updated: ``npm outdated`` <br>
+&emsp;use the following command to check if any modules can be updated: ``npm outdated`` <br>
 
-In local mode, packages are installed in the **node_modules** directory of the parent directory. If the project has a **package.json** file, then by running: ``npm install`` will install everything the project needs into the **node_modules** folder, creating it if it doesn't already exist. <br>
+&emsp;In local mode, packages are installed in the **node_modules** directory of the parent directory. If the project has a **package.json** file, then by running: ``npm install`` will install everything the project needs into the **node_modules** folder, creating it if it doesn't already exist. <br>
 
-When you first install a package in a Node.js project, **npm** automatically creates a **package-lock.json** file.
+&emsp;When you first install a package in a Node.js project, **npm** automatically creates a **package-lock.json** file.
 ___
 
 ## Node.js = Runtime Environment + JavaScript Library 
@@ -50,9 +50,9 @@ What can Node.js do?
 ___
 
 ## ESLint
-To install the package only **for development** (locally) - ``npm install eslint --save-dev`` - because it is not needed in production. <br>
-To create a configuration file locally: ``./node_modules/.bin/eslint –init`` <br>
-Starts ESLint checking the specified file: ``./node_modules/.bin/eslint yourfile.js``. <br>
+&emsp;To install the package only **for development** (locally) - ``npm install eslint --save-dev`` - because it is not needed in production. <br>
+&emsp;To create a configuration file locally: ``./node_modules/.bin/eslint –init`` <br>
+&emsp;Starts ESLint checking the specified file: ``./node_modules/.bin/eslint yourfile.js``. <br>
 
 > One of the most popular linter settings is to use the Airbnb JavaScript Style.
 > > ``npm install --save-dev eslint-config-airbnb``
@@ -60,24 +60,24 @@ Starts ESLint checking the specified file: ``./node_modules/.bin/eslint yourfile
 ___
 
 ## CommonJS modules
-Think of modules the same as JavaScript libraries. It's like a set of features that you want to include in your app. 
+&emsp;Think of modules the same as JavaScript libraries. It's like a set of features that you want to include in your app. 
 
-In the browser ecosystem, the use of JavaScript modules depends on the ``import`` and ``export`` operators; which load and export **EMCAScript (ES) modules**, respectively. By default, **Node.js** supports a module system called **CommonJS modules** (_treating each JavaScript file as a separate module_). To include (import) a module, the ``require('module name')`` function is used, and the variables and functions themselves are exported from this module using ``module.exports``. Starting with version **Node.js 14.0.0** supports **ES modules**.
+&emsp;In the browser ecosystem, the use of JavaScript modules depends on the ``import`` and ``export`` operators; which load and export **EMCAScript (ES) modules**, respectively. By default, **Node.js** supports a module system called **CommonJS modules** (_treating each JavaScript file as a separate module_). To include (import) a module, the ``require('module name')`` function is used, and the variables and functions themselves are exported from this module using ``module.exports``. Starting with version **Node.js 14.0.0** supports **ES modules**.
 
 Library authors can simply **enable ES modules** in a Node.js package by changing the file extension from **.js** to **.mjs**.
 
 
 
-Another way to **enable ES modules** in your project is to add a ``"type: module"`` field to the nearest **package.json** file. With this inclusion, Node.js treats all files in this package as ES modules, and you don't have to change the file extension to .mjs.
+&emsp;Another way to **enable ES modules** in your project is to add a ``"type: module"`` field to the nearest **package.json** file. With this inclusion, Node.js treats all files in this package as ES modules, and you don't have to change the file extension to .mjs.
 
 
 
-Alternatively, you can install and configure a transpiler like **Babel** to compile ES module syntax to CommonJS syntax. Projects like **React** and **Vue** support ES modules because they use Babel under the hood to compile code.
+&emsp;Alternatively, you can install and configure a transpiler like **Babel** to compile ES module syntax to CommonJS syntax. Projects like **React** and **Vue** support ES modules because they use Babel under the hood to compile code.
 
 
-One limitation of using ``require()`` is that it loads modules ***synchronously***. _This means that the modules are loaded and processed one after the other._ As you might have guessed, this can cause some performance issues for large-scale applications with hundreds of modules. In this case, ``import`` can outperform ``require()`` because of its ***asynchronous*** behavior. <br>
-However, the synchronous nature of ``require()`` may not pose much of a problem for a small application using a couple of modules. <br>
-Beginners can find it useful and convenient to learn about **ES modules**, as they are becoming the standard format for defining modules in JavaScript, both client-side (_browser_) and server-side (_Node.js_).
+&emsp;One limitation of using ``require()`` is that it loads modules ***synchronously***. _This means that the modules are loaded and processed one after the other._ As you might have guessed, this can cause some performance issues for large-scale applications with hundreds of modules. In this case, ``import`` can outperform ``require()`` because of its ***asynchronous*** behavior. <br>
+&emsp;However, the synchronous nature of ``require()`` may not pose much of a problem for a small application using a couple of modules. <br>
+&emsp;Beginners can find it useful and convenient to learn about **ES modules**, as they are becoming the standard format for defining modules in JavaScript, both client-side (_browser_) and server-side (_Node.js_).
 
 
 
