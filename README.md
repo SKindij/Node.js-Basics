@@ -117,8 +117,14 @@ Library authors can simply **enable ES modules** in a Node.js package by changin
 
 ___
 
-## Error in Node.js
-
+## An error in Node.js is any instance of the Error object.
+&emsp;**Built-in error classes:**
+  + ReferenceError (an attempt to reach a non-existent reference), 
+  + RangeError (occurs when a numeric variable or parameter is outside the permissible range), 
+  + TypeError (occurs when an invalid type for a variable or parameter), 
+  + URIError (!parameters), 
+  + EvalError (occurs in global function eval) 
+  + SyntaxError (occurs when parsing the source code of the eval function).
 
 
 
