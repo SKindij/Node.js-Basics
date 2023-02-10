@@ -65,6 +65,25 @@ ___
 &emsp;In the browser ecosystem, the use of JavaScript modules depends on the ``import`` and ``export`` operators; which load and export **EMCAScript (ES) modules**, respectively. By default, **Node.js** supports a module system called **CommonJS modules** (_treating each JavaScript file as a separate module_). To include (import) a module, the ``require('module name')`` function is used, and the variables and functions themselves are exported from this module using ``module.exports``. Starting with version **Node.js 14.0.0** supports **ES modules**.
 
 Library authors can simply **enable ES modules** in a Node.js package by changing the file extension from **.js** to **.mjs**.
+> Consider a short example. => Let's create two files and write the following in them:
+> > + util.mjs
+> > ```javascript
+> >    export function doTesting(isElectricity, quantityGood) { 
+> >      if (isElectricity) { console.log(` < Testing quality of ${quantityGood} spare parts. > `);
+> >        let defectRate = 0.018;
+> >        console.log(` < Transfering ${Math.floor(quantityGood * (1-defectRate))} parts to the production workshop. > `);
+> >        return true
+> >      } else { console.log(" We cannot do this without electricity. ");
+> >        return false}; 
+> >    };  
+> >    export function doPacking(hasDeliveryArrived, quantityOrders) {
+> >      if (hasDeliveryArrived) { console.log(` < Packing assembled structures according to ${quantityOrders} orders. > `);  
+> >        return true
+> >      } else { console.log(" Unfortunately, the raw material has not yet been delivered from the supplier. ");
+> >        return false}; 
+> >    }; 
+> > ```
+> > + app.mjs
 
 
 
