@@ -178,6 +178,11 @@ ___
 ___
 
 ## How to Exit a Process in Node.js
+&emsp;You need to manage various services for your application to work efficiently and properly.<br>
+&emsp; **Exiting of Script Implicitly** - _You just need to wait for the script to complete. The code will automatically exit the process when it reaches the end and there is nothing left to process_.
+
+
+
 
 
 
