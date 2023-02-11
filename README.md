@@ -156,11 +156,11 @@ ___
 ___
 
 ## Command Line Application with Node.js
-
-
-
-
-
+&emsp;CLIs are often the primary tools for automating tasks (deploying worker app, running tests, generating reports, migrating data, DevOps). If you do the same thing over and over again, chances are you can automate these steps with a script and save yourself a lot of time!
+> 1. ``mkdir swork-cli`` - _create a new folder_
+> 2. ``cd swork-cli`` - _and get into it_
+> 3. ``npm init`` - _This utility will walk you through creating a package.json file._
+> 4. ``mkdir bin`` - _create another folder in the project_
 
 ___
 
