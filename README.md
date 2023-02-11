@@ -162,6 +162,14 @@ ___
 > 3. ``npm init`` - _This utility will walk you through creating a package.json file._
 > 4. ``mkdir bin`` - _create another folder in the project_
 
+&emsp;_Variables and constants represent unique locations in memory that contain data that a program uses in its calculations._<br>
+**Environment Variables** are variables external to our program that are contained in the OS or container where the working program is running. They are stored in a local **.env** file that we should put in **.gitignore**.<br>
+&emsp;These variables exist outside of your code, are part of your server environment, and can help you both optimize and make script and program execution more secure. Node.js provides an **env property** under the main module, that is, the process, which contains all the environment variables set when the process is started.
+
+
+
+
+
 ___
 
 ## How to Exit a Process in Node.js
