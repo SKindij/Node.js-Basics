@@ -20,18 +20,26 @@
 the **package.json** file will contain all dependencies and scripts. _Here is an example of a shortened version of the standard project_:
 ```javascript
 {
-  "name": "SKrollo-app project",       // by default, this is the name of the folder you're in
-  "version": "0.0.7",                 // <major> "." <minor> (functions) "." <patch> (bugs)     https://semver.org/
+  "name": "SKrollo-app project",            // by default, this is the name of the folder you're in
+  "version": "0.0.7",                      // <major> "." <minor> (functions) "." <patch> (bugs)     https://semver.org/
   "description": "",                       // what does your module do
   "main": "index.js",                      // entry point for the application being loaded
   "scripts": { ….. },                     // this is the object for the necessary scripts
-  "devDependencies": { ..…   },          // this is an object for external packages
-  "dependencies": { ……. },
+  "devDependencies": { ..…   },          // (it contains development tools)
+  "dependencies": { ……. },               // (it is part of the program in working condition)
   "keywords": [],                       // an array of strings with useful terms to search the repository
   "author": "SKindij",                 // optional "Name \<Email\> (Website)"
   "license": "UNLICENSED"             // licensing options https://opensource.org/licenses
 }
 ```
+
+&emsp;Packages may not be necessary for your application in a production environment, but may be useful when writing code. <br>
+You can also use flag abbreviations: 
+> > > + ``npm i -D eslint`` - linting для JavaScript;
+> > > + ``npm install -D node-sass`` - 
+> > > + ````
+
+
 
 > > > + ``npm ls`` - _displays the entire dependency tree — your project's modules and the modules your dependencies depend on_;
 > > > + _to list only the modules you have installed, without their dependencies, type the following in a shell_: ``npm ls --depth 0``;
@@ -39,11 +47,15 @@ the **package.json** file will contain all dependencies and scripts. _Here is an
 > > > + _to update a specific program use the following (as an example)_: ``npm up eslint``;
 > > > + _npm provides a command to detect potential security risks in your dependencies_: ``npm audit`` and then ``npm audit fix``;
 
-
-
 &emsp;In local mode, packages are installed in the **node_modules** directory of the parent directory. If the project has a **package.json** file, then by running: ``npm install`` will install everything the project needs into the **node_modules** folder, creating it if it doesn't already exist. <br>
 
-&emsp;When you first install a package in a Node.js project, **npm** automatically creates a **package-lock.json** file.
+
+
+
+When you first install a package in a Node.js project, **npm** automatically creates a **package-lock.json** file.
+
+
+
 ___
 
 ## Node.js = Runtime Environment + JavaScript Library 
