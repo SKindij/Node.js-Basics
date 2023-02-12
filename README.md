@@ -6,10 +6,17 @@
 &emsp;``npm –version`` <br>
 &emsp;How to Update NPM: ``npm install -g npm@latest`` <br>
 &emsp;To get a list of all global packages, you can run the command: ``npm list -g`` <br>
+
 &emsp;Updating is also made easy with the launcher: ``npm update <package-name>`` <br>
 &emsp;In addition to regular downloads, you can specify any version of a package: ``npm install <package-name>@<version>`` <br>
 
-&emsp;If your code will use **Git** for version control, first create a **Git repository** and then run ``npm init``. Git automatically fills in the following fields for your **package.json file**: ``repository, bugs, and homepage``.
+#### Before installing the packages locally, we pre-initialize the project and create the **package.json** file.
+&emsp; ***Note:*** If your code will use **Git** for version control, first create a **Git repository** and then run ``npm init``. Git automatically fills in the following fields for your **package.json file**: ``repository, bugs, and homepage``.
+
+> >  go to the folder of your project in the console
+> > > - _execute the_ ``npm init`` _command and answer the questions or just press_ <kbd>Enter</kbd>;
+> > > - _or enter the command_ ``npm init -y`` _to quickly create package.json_;
+
 
 ```javascript
 {
@@ -183,19 +190,20 @@ ___
 
 &emsp;If the script hangs, press <kbd>ctrl</kbd>+<kbd>c</kbd> to exit the process. Or just close the terminal.
 
-&emsp;You can use the ``exit()`` function if your process has not terminated properly to force it to terminate.
+&emsp;You can use the ``exit()`` function if your process has not terminated properly to force it to terminate. <br>
 &emsp; &emsp; &emsp; &emsp; &emsp; ``process.exit(code);`` - this function takes one parameter: different status codes (exit codes).
-> **0** - _need to terminate the process when asynchronous operations are not in progress; default argument_;
-> **1** - _useful for fatal exceptions not handled by the domain_;
-> **3** - _for development where internal code cannot be properly analyzed_;
-> **4** - _used in the development case when the JavaScript code does not return a function value_;
-> **5** - _useful for fatal errors where the V8 engine cannot recover_;
-> **6** - _when the critical exception handler's internal function is set to no function and cannot be called_;
-> **7** - _if an error occurs during uncaught expectation processing_;
-> **9** - _when we do not provide a value for a required parameter_;
-> **10** - _JavaScript throws an error when calling Node.js initialization_;
-> **12** - _if you selected the wrong port number in the process_;
+> **0** - _need to terminate the process when asynchronous operations are not in progress; default argument_; <br>
+> **1** - _useful for fatal exceptions not handled by the domain_; <br>
+> **3** - _for development where internal code cannot be properly analyzed_; <br>
+> **4** - _used in the development case when the JavaScript code does not return a function value_; <br>
+> **5** - _useful for fatal errors where the V8 engine cannot recover_; <br>
+> **6** - _when the critical exception handler's internal function is set to no function and cannot be called_; <br>
+> **7** - _if an error occurs during uncaught expectation processing_; <br>
+> **9** - _when we do not provide a value for a required parameter_; <br>
+> **10** - _JavaScript throws an error when calling Node.js initialization_; <br>
+> **12** - _if you selected the wrong port number in the process_; <br>
 > **13** - _when await is outside a function in top-level code, but the passed Promise has never been resolved_;
+
 
 
 ___
