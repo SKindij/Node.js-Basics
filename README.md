@@ -17,7 +17,7 @@
 > > > - _execute the_ ``npm init`` _command and answer the questions or just press_ <kbd>Enter</kbd>;
 > > > - _or enter the command_ ``npm init -y`` _to quickly create package.json_;
 
-
+the **package.json** file will contain all dependencies and scripts. _Here is an example of a shortened version of the standard project_:
 ```javascript
 {
   "name": "SKrollo-app project",       // by default, this is the name of the folder you're in
@@ -33,7 +33,13 @@
 }
 ```
 
-&emsp;use the following command to check if any modules can be updated: ``npm outdated`` <br>
+> > > + ``npm ls`` - _displays the entire dependency tree — your project's modules and the modules your dependencies depend on_;
+> > > + _to list only the modules you have installed, without their dependencies, type the following in a shell_: ``npm ls --depth 0``;
+> > > + ``npm outdated`` - use the following command to check if any modules can be updated;
+> > > + _to update a specific program use the following (as an example)_: ``npm up eslint``;
+> > > + _npm provides a command to detect potential security risks in your dependencies_: ``npm audit`` and then ``npm audit fix``;
+
+
 
 &emsp;In local mode, packages are installed in the **node_modules** directory of the parent directory. If the project has a **package.json** file, then by running: ``npm install`` will install everything the project needs into the **node_modules** folder, creating it if it doesn't already exist. <br>
 
