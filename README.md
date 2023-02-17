@@ -1,5 +1,15 @@
 # basics-of-Node.js
-&emsp;topic :radioactive: initial general basics of knowledge about Node.js
+
+&emsp;Node.js runs the **V8 JavaScript engine** (_core of Google Chrome_) outside of the browser. This allows Node.js to be very performant.
+When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back. <br>
+&emsp; ECMAScript standards can be used without problems, as you don’t have to wait for all your users to update their browsers.
+
+
+
+
+
+
+
 
 
 ## Node Package Manager (NPM)
