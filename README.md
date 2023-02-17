@@ -1,11 +1,18 @@
 # basics-of-Node.js
-
 &emsp;Node.js runs the **V8 JavaScript engine** (_core of Google Chrome_) outside of the browser. This allows Node.js to be very performant.
 When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back. <br>
 &emsp; ECMAScript standards can be used without problems, as you don’t have to wait for all your users to update their browsers.
 
-
-
+## Node.js has a vast number of libraries
+&emsp;_npm helped the ecosystem of node.js proliferate and now the npm registry hosts almost 500.000 open source packages you can freely use;_
+* Express - simple powerful way to create a web server. Its minimalist approach, focused on the core features of a server, is key to its success.
+* Meteor - incredibly powerful full-stack framework to building apps with JS, sharing code on the client and the server. It integrates with frontend libs React, Vue and Angular. Can be used to create mobile apps as well.
+* Next.js - a framework to render server-side rendered React applications.
+* Micro - very lightweight server to create asynchronous HTTP microservices.
+* Socket.io - real-time communication engine to build network applications.
+* SvelteKit: Sapper - framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
+* Remix - fullstack web framework for building excellent user experiences for the web. It comes out of the box with everything you need to build modern web applications (both frontend and backend) and deploy them to any JS-based runtime environment (including Node.js).
+* Fastify - fast and efficient web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture, inspired by Hapi and Express.
 
 
 
