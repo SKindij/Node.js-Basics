@@ -23,3 +23,16 @@
 > run the program as follows: 
 > > + ``node firstNode.js HOME PWD USER PATH``
 > > + ``node firstNode.js HOMEPATH PROCESSOR_IDENTIFIER USERPROFILE``
+___
+
+**file:** ``Hello-Node.js``
+> ``__dirname`` _is a global variable that stores the folder in which the script file is located_
+
+&emsp; The **web server** receives HTTP requests from clients, including your browser, and sends them HTTP responses, such as HTML pages or JSON code from an API.
+> + Client software is responsible for rendering content such as navigation bar colors and text styles.
+> + Server software is responsible for the exchange, processing and storage of data.
+
+___
+
+
+
