@@ -244,6 +244,28 @@ ___
 ___
 
 ## API - Application Programming Interface 
+&emsp; APIs are mechanisms that allow two software components to interact with each other using a set of definitions and protocols.
+> _For example, a weather service system contains daily weather data. The weather app on your phone communicates with this system via an API and displays daily weather updates on your phone._
+
+&emsp; In the context of an API, the word "application" refers to any piece of software with a specific function. An interface can be thought of as a service contract between two programs (how they interact using requests and responses). The API documentation provides information on how developers should structure these requests and responses.<br>
+&emsp; API architecture: The application that sends the request is called the client, and the application that sends the response is called the server.
+> _So, in the weather example, the service database is the server and the mobile app is the client._
+
+&emsp; There are four different ways APIs work, depending on when and why they were created.
++ **SOAP** (Simple Object Access Protocol) is a simple object access protocol. The client and server exchange messages using XML. This is a less flexible API that was more popular in the past.
++ **RPC** are called the Remote Procedure Call System. The client executes a function (or procedure) on the server, and the server sends the result back to the client.
++ **Websocket** is another modern development that uses JSON objects to transfer data. Supports two-way communication between client programs and the server. The server can send callback messages to connected clients, making it more efficient than the REST API.
++ **REST** is currently the most popular and flexible API interfaces on the Internet. The client sends requests to the server in the form of data. The server uses this client input to run internal functions and returns the output back to the client.
+
+
+
+
+
+
+
+
+
+
 
 
 
