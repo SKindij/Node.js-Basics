@@ -256,9 +256,9 @@ ___
 + **RPC** are called the Remote Procedure Call System. The client executes a function (or procedure) on the server, and the server sends the result back to the client.
 + **Websocket** is another modern development that uses JSON objects to transfer data. Supports two-way communication between client programs and the server. The server can send callback messages to connected clients, making it more efficient than the REST API.
 + **REST** is currently the most popular and flexible API interfaces on the Internet. The client sends requests to the server in the form of data. The server uses this client input to run internal functions and returns the output back to the client.
-
-
-
+> _Web API or Web Service API is an application processing interface between a web server and a web browser. All web services are APIs, but not all APIs are web services. A REST API is a special type of Web API that uses a standard architectural style._
+> > REST – Representational State Transfer defines a set of functions such as GET, PUT, DELETE, etc. that clients can use to access server data. Clients and servers exchange data using the HTTP protocol. <br>
+> > The main feature of the REST API is that such transfer is performed without saving state (servers do not save client data between requests). Client requests to the server are similar to the URLs you type in your browser to visit a website. The response from the server is plain data without the typical graphical representation of a web page.
 
 
 
