@@ -1,4 +1,32 @@
 # basics-of-Node.js
+
+## What is Node.js? - Definition and overview
+
+## History of Node.js - Who created it and why
+
+## Features and advantages of Node.js - Why use Node.js
+
+## Architecture of Node.js - How Node.js works
+
+## V8 Engine - JavaScript engine used by Node.js
+
+## Event-driven architecture - How events are handled in Node.js
+
+## Non-blocking I/O - How Node.js handles I/O operations
+
+## Asynchronous programming - How Node.js supports asynchronous programming
+
+## npm - Node Package Manager, used for installing and managing packages
+
+## REPL - Read-Evaluate-Print Loop, a tool for testing Node.js code
+
+## Basic concepts of JavaScript - Variables, functions, loops, conditionals, etc.
+
+## Basic concepts of server-side development - HTTP protocol, handling requests and responses, etc.
+
+## How to install Node.js - Steps for installation on different platforms
+
+
 &emsp;Node.js runs the **V8 JavaScript engine** (_core of Google Chrome_) outside of the browser. This allows Node.js to be very performant.
 When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back. <br>
 &emsp; ECMAScript standards can be used without problems, as you don’t have to wait for all your users to update their browsers.
@@ -13,10 +41,6 @@ When Node.js performs an I/O operation, like reading from the network, accessing
 * SvelteKit: Sapper - framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
 * Remix - fullstack web framework for building excellent user experiences for the web. It comes out of the box with everything you need to build modern web applications (both frontend and backend) and deploy them to any JS-based runtime environment (including Node.js).
 * Fastify - fast and efficient web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture, inspired by Hapi and Express.
-
-
-
-
 
 
 ## Node Package Manager (NPM)
