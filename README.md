@@ -1,4 +1,23 @@
-# basics-of-Node.js
+# Node.js knowledge base
+
+| Topic           | Description                                                                     |
+|-----------------|---------------------------------------------------------------------------------|
+| Basics          | Introduction to Node.js and its architecture                                    |
+| Modules         | Creating and using modules in Node.js                                           |
+| File System     | Reading and writing files using Node.js file system module                      |
+| HTTP            | Creating HTTP server and client using Node.js HTTP module                       |
+| Events          | Using events and event emitters in Node.js                                      |
+| Streams         | Implementing streams and piping in Node.js                                      |
+| Child Processes | Spawning child processes in Node.js                                             |
+| Debugging       | Debugging Node.js applications using built-in and third-party tools             |
+| Express.js      | Introduction to Express.js web application framework                            |
+| MongoDB         | Using MongoDB database with Node.js                                          |
+| WebSockets      | Implementing real-time communication using WebSockets in Node.js             |
+| Authentication  | Implementing user authentication and authorization in Node.js                |
+| Testing         | Unit and integration testing in Node.js                                      |
+| Deployment      | Deploying Node.js applications to production                                 |
+
+
 
 ## What is Node.js? - Definition and overview
 
