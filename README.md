@@ -19,31 +19,44 @@
 
 
 
-## What is Node.js? - Definition and overview
+### What is Node.js? 
+- Definition and overview
 
-## History of Node.js - Who created it and why
+### History of Node.js 
+- Who created it and why
 
-## Features and advantages of Node.js - Why use Node.js
+### Features and advantages of Node.js 
+- Why use Node.js
 
-## Architecture of Node.js - How Node.js works
+### Architecture of Node.js 
+- How Node.js works
 
-## V8 Engine - JavaScript engine used by Node.js
+### V8 Engine 
+- JavaScript engine used by Node.js
 
-## Event-driven architecture - How events are handled in Node.js
+### Event-driven architecture 
+- How events are handled in Node.js
 
-## Non-blocking I/O - How Node.js handles I/O operations
+### Non-blocking I/O 
+- How Node.js handles I/O operations
 
-## Asynchronous programming - How Node.js supports asynchronous programming
+### Asynchronous programming 
+- How Node.js supports asynchronous programming
 
-## npm - Node Package Manager, used for installing and managing packages
+### npm 
+- Node Package Manager, used for installing and managing packages
 
-## REPL - Read-Evaluate-Print Loop, a tool for testing Node.js code
+### REPL 
+- Read-Evaluate-Print Loop, a tool for testing Node.js code
 
-## Basic concepts of JavaScript - Variables, functions, loops, conditionals, etc.
+### Basic concepts of JavaScript 
+- Variables, functions, loops, conditionals, etc.
 
-## Basic concepts of server-side development - HTTP protocol, handling requests and responses, etc.
+### Basic concepts of server-side development 
+- HTTP protocol, handling requests and responses, etc.
 
-## How to install Node.js - Steps for installation on different platforms
+### How to install Node.js 
+- Steps for installation on different platforms
 
 
 &emsp;Node.js runs the **V8 JavaScript engine** (_core of Google Chrome_) outside of the browser. This allows Node.js to be very performant.
