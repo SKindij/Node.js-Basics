@@ -1,69 +1,29 @@
 # Node.js knowledge base
 
-| Topic           | Description                                                                     |
-|-----------------|---------------------------------------------------------------------------------|
-| Basics          | Introduction to Node.js and its architecture                                    |
-| Modules         | Creating and using modules in Node.js                                           |
-| File System     | Reading and writing files using Node.js file system module                      |
-| HTTP            | Creating HTTP server and client using Node.js HTTP module                       |
-| Events          | Using events and event emitters in Node.js                                      |
-| Streams         | Implementing streams and piping in Node.js                                      |
-| Child Processes | Spawning child processes in Node.js                                             |
-| Debugging       | Debugging Node.js applications using built-in and third-party tools             |
-| Express.js      | Introduction to Express.js web application framework                            |
+| Topic           | Description                                                                  |
+|-----------------|------------------------------------------------------------------------------|
+| Basics          | Introduction to Node.js and NPM                                 |
+| Modules         | Creating and using modules in Node.js                                        |
+| File System     | Reading and writing files using Node.js file system module                   |
+| HTTP            | Creating HTTP server and client using Node.js HTTP module                    |
+| Events          | Using events and event emitters in Node.js                                   |
+| Streams         | Implementing streams and piping in Node.js                                   |
+| Child Processes | Spawning child processes in Node.js                                          |
+| Debugging       | Debugging Node.js applications using built-in and third-party tools          |
+| Express.js      | Introduction to Express.js web application framework                         |
 | MongoDB         | Using MongoDB database with Node.js                                          |
 | WebSockets      | Implementing real-time communication using WebSockets in Node.js             |
 | Authentication  | Implementing user authentication and authorization in Node.js                |
 | Testing         | Unit and integration testing in Node.js                                      |
 | Deployment      | Deploying Node.js applications to production                                 |
 
-
-
-### What is Node.js? 
-- Definition and overview
-
-### History of Node.js 
-- Who created it and why
-
-### Features and advantages of Node.js 
-- Why use Node.js
-
-### Architecture of Node.js 
-- How Node.js works
-
-### V8 Engine 
-- JavaScript engine used by Node.js
-
-### Event-driven architecture 
-- How events are handled in Node.js
-
-### Non-blocking I/O 
-- How Node.js handles I/O operations
-
-### Asynchronous programming 
-- How Node.js supports asynchronous programming
-
-### npm 
-- Node Package Manager, used for installing and managing packages
-
-### REPL 
-- Read-Evaluate-Print Loop, a tool for testing Node.js code
-
-### Basic concepts of JavaScript 
-- Variables, functions, loops, conditionals, etc.
-
-### Basic concepts of server-side development 
-- HTTP protocol, handling requests and responses, etc.
-
-### How to install Node.js 
-- Steps for installation on different platforms
-
+## Basics: Introduction to Node.js and NPM
 
 &emsp;Node.js runs the **V8 JavaScript engine** (_core of Google Chrome_) outside of the browser. This allows Node.js to be very performant.
 When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back. <br>
 &emsp; ECMAScript standards can be used without problems, as you don’t have to wait for all your users to update their browsers.
 
-## Node.js has a vast number of libraries
+#### Node.js has a vast number of libraries
 &emsp;_npm helped the ecosystem of node.js proliferate and now the npm registry hosts almost 500.000 open source packages you can freely use;_
 * Express - simple powerful way to create a web server. Its minimalist approach, focused on the core features of a server, is key to its success.
 * Meteor - incredibly powerful full-stack framework to building apps with JS, sharing code on the client and the server. It integrates with frontend libs React, Vue and Angular. Can be used to create mobile apps as well.
@@ -75,7 +35,7 @@ When Node.js performs an I/O operation, like reading from the network, accessing
 * Fastify - fast and efficient web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture, inspired by Hapi and Express.
 
 
-## Node Package Manager (NPM)
+### Node Package Manager (NPM)
 &emsp;``npm –version`` <br>
 &emsp;How to Update NPM: ``npm install -g npm@latest`` <br>
 &emsp;To get a list of all global packages, you can run the command: ``npm list -g`` <br>
@@ -93,8 +53,8 @@ When Node.js performs an I/O operation, like reading from the network, accessing
 the **package.json** file will contain all dependencies and scripts. _Here is an example of a shortened version of the standard project_:
 ```javascript
 {
-  "name": "SKrollo-app project",            // by default, this is the name of the folder you're in
-  "version": "0.0.7",                      // <major> "." <minor> (functions) "." <patch> (bugs)     https://semver.org/
+  "name": "app project",                    // by default, this is the name of the folder you're in
+  "version": "0.5.7",                      // <major> "." <minor> (functions) "." <patch> (bugs)  https://semver.org/
   "description": "",                       // what does your module do
   "main": "index.js",                      // entry point for the application being loaded
   "scripts": { ….. },                     // this is the object for the necessary scripts
@@ -110,10 +70,8 @@ the **package.json** file will contain all dependencies and scripts. _Here is an
 You can also use flag abbreviations: 
 > > > + ``npm i -D eslint`` - linting для JavaScript;
 > > > + ``npm install -D node-sass`` - 
-> > > + ````
 
-
-
+Additional commands in the console:
 > > > + ``npm ls`` - _displays the entire dependency tree — your project's modules and the modules your dependencies depend on_;
 > > > + _to list only the modules you have installed, without their dependencies, type the following in a shell_: ``npm ls --depth 0``;
 > > > + ``npm outdated`` - use the following command to check if any modules can be updated;
@@ -122,30 +80,24 @@ You can also use flag abbreviations:
 
 &emsp;In local mode, packages are installed in the **node_modules** directory of the parent directory. If the project has a **package.json** file, then by running: ``npm install`` will install everything the project needs into the **node_modules** folder, creating it if it doesn't already exist. <br>
 
-
-
-
 When you first install a package in a Node.js project, **npm** automatically creates a **package-lock.json** file.
 
+- - -
 
-
-___
-
-## Node.js = Runtime Environment + JavaScript Library 
+#### Node.js = Runtime Environment + JavaScript Library 
 ``node –v`` <br>
 > How to Update Node and NPM to the Latest Version: <br>
 > > - ``npm cache clean -f``
 > > - ``npm install -g n``
 > > - ``n stable``
 
-What can Node.js do?
+#### What can Node.js do?
  + can generate dynamic page content;
  + can create, open, read, write, delete and close files on the server;
  + can collect form data;
  + can add, delete and modify data in your database;
 
-
-___
+- - -
 
 ## ESLint
 &emsp;To install the package only **for development** (locally) - ``npm install eslint --save-dev`` - because it is not needed in production. <br>
