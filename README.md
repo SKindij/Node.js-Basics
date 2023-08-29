@@ -99,56 +99,12 @@ When you first install a package in a Node.js project, **npm** automatically cre
 
 - - -
 
-## ESLint
-&emsp;To install the package only **for development** (locally) - ``npm install eslint --save-dev`` - because it is not needed in production. <br>
-&emsp;To create a configuration file locally: ``./node_modules/.bin/eslint –init`` <br>
-&emsp;Starts ESLint checking the specified file: ``./node_modules/.bin/eslint yourfile.js``. <br>
-
-> One of the most popular linter settings is to use the Airbnb JavaScript Style.
-> > ``npm install --save-dev eslint-config-airbnb``
-> > > and add to your *.eslintrc* file _located at the root of your project_: ``{ "extends": "airbnb" }``
+### Nodejs async programming
+&emsp;Read [Asynchronous programming in JavaScript and Node.js](https://github.com/SKindij/Asynchronous-Programming-JS)...
 
 - - -
 
-## An error in Node.js is any instance of the Error object.
-&emsp;**Built-in error classes:**
-  + ReferenceError (_an attempt to reach a non-existent reference_), 
-  + RangeError (_occurs when a numeric variable or parameter is outside the permissible range_), 
-  + TypeError (_occurs when an invalid type for a variable or parameter_), 
-  + URIError (_!parameters_), 
-  + EvalError (_occurs in global function eval_) 
-  + SyntaxError (_occurs when parsing the source code of the eval function_).
-
-> Here are some **examples of operational errors** in Node.js:
-> > * The API request is not executed for some reason (for example, the server is down or the speed limit is exceeded).
-> > * The user sends invalid data to the server, such as an invalid phone number or email address.
-> > * The connection to the database is lost, possibly due to a faulty network connection.
-> > * The OS cannot fulfill your request to open or write to the file.
-
-> **Handling operational errors** includes considering whether an operation might fail, why it might fail, and what to do if it does.
-> > 1. Report the error to the stack
-> > 2. Repeat the operation
-> > 3. Send the error to the client
-> > 4. Interrupt the program.
-
-&emsp;In addition to the built-in Error object classes, you can create your own to better represent the types of errors that may occur in your application. For example, you might have a **ValidationError** class for errors that occur when validating user input, a **DatabaseError** class for database operations, a **TimeoutError** class for operations that run out of assigned timeouts, and so on.
-
-&emsp;Basically, **exceptions** are synchronous errors, and **rejections** are asynchronous errors.<br>
-> >   There are four main error reporting strategies in Node.js: <br>
-> >    \* try…catch blocks; * Callbacks; * Promises; * Event emitters.
-
-
-___
-
-## Nodejs async programming
-&emsp;Read [Node.js uses asynchronous programming!](https://github.com/SKindij/Asynchronous-JS-Nodejs)...
-
-
-
-
-___
-
-## Command Line Application with Node.js
+### Command Line Application with Node.js
 &emsp;CLIs are often the primary tools for automating tasks (deploying worker app, running tests, generating reports, migrating data, DevOps). If you do the same thing over and over again, chances are you can automate these steps with a script and save yourself a lot of time!
 > 1. ``mkdir swork-cli`` - _create a new folder_
 > 2. ``cd swork-cli`` - _and get into it_
@@ -168,9 +124,9 @@ ___
 > > + * location of static files
 > > + * endpoints of external services.
 
-___
+- - -
 
-## How to Exit a Process in Node.js
+### How to Exit a Process in Node.js
 &emsp;You need to manage various services for your application to work efficiently and properly.<br>
 &emsp; **Exiting of Script Implicitly** - _You just need to wait for the script to complete. The code will automatically exit the process when it reaches the end and there is nothing left to process_.
 
@@ -190,11 +146,9 @@ ___
 > **12** - _if you selected the wrong port number in the process_; <br>
 > **13** - _when await is outside a function in top-level code, but the passed Promise has never been resolved_;
 
+- - -
 
-
-___
-
-## API - Application Programming Interface 
+### API - Application Programming Interface 
 &emsp; APIs are mechanisms that allow two software components to interact with each other using a set of definitions and protocols.
 > _For example, a weather service system contains daily weather data. The weather app on your phone communicates with this system via an API and displays daily weather updates on your phone._
 
@@ -210,13 +164,4 @@ ___
 > _Web API or Web Service API is an application processing interface between a web server and a web browser. All web services are APIs, but not all APIs are web services. A REST API is a special type of Web API that uses a standard architectural style._
 > > REST – Representational State Transfer defines a set of functions such as GET, PUT, DELETE, etc. that clients can use to access server data. Clients and servers exchange data using the HTTP protocol. <br>
 > > The main feature of the REST API is that such transfer is performed without saving state (servers do not save client data between requests). Client requests to the server are similar to the URLs you type in your browser to visit a website. The response from the server is plain data without the typical graphical representation of a web page.
-
-
-
-
-
-
-
-
-
 
