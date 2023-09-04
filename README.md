@@ -4,8 +4,8 @@
 |----------------------------------------------------------------------------------------|------------------------------------------------------------|
 | 1. Basics                                                                              | Introduction to Node.js and NPM                            |
 | 2. [Modules](https://github.com/SKindij/Node.js-Basics/tree/main/2.%20Modules)         | Creating and using modules in Node.js                      |
-| 3. [File System](https://github.com/SKindij/Node.js-Basics/tree/main/3.%20File-System) | Reading and writing files using Node.js file system module |
-| 4. [HTTP](https://github.com/SKindij/Node.js-Basics/tree/main/4.%20HTTP)               | Creating HTTP server and client using Node.js HTTP module  |
+| 3. [File System](https://github.com/SKindij/Node.js-Basics/tree/main/3.%20File-System) | Interacting with files using 'fs' and 'path' modules       |
+| 4. [HTTP](https://github.com/SKindij/Node.js-Basics/tree/main/4.%20HTTP)               | Creating HTTP server and client using HTTP module          |
 | 5. [Events](https://github.com/SKindij/Node.js-Basics/tree/main/5.%20Events)           | Using events and event emitters in Node.js                 |
 | 6. [Streams](https://github.com/SKindij/Node.js-Basics/tree/main/6.%20Streams)         | Implementing streams and piping in Node.js                 |
 | 7. [Child Processes](https://github.com/SKindij/Node.js-Basics/tree/main/7.%20Child%20Processes) | Spawning child processes in Node.js              |
