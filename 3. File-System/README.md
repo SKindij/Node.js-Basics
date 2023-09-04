@@ -84,6 +84,63 @@ When working with large files, it is recommended to use **fs.createReadStream()*
   });
 ```
 
-Node.js also provides the path module, which allows you to work with file paths and directories in a cross-platform way.
 
+## path module in Node.js
+
+> The "path" module in Node.js provides a set of methods and utilities for working with file paths and directories in a platform-independent way. It's particularly useful when dealing with file and directory paths in your applications because it ensures compatibility across different operating systems (Windows, macOS, Linux, etc.), where path formats may vary.
+
+Here are some commonly used functions and concepts from the "path" module:
+1. Joining Paths
+    + The **path.join()** method allows you to join multiple path segments into a single path, using the appropriate path separator for the current operating system.
+    + This helps ensure that your paths are correctly formatted:
+    + ```javascript
+        const path = require('path');
+        const parentDir = '/Users/user';
+        const subDir = 'documents';
+        const fullPath = path.join(parentDir, subDir, 'file.txt');
+        console.log(fullPath);
+        // Output: '/Users/user/documents/file.txt'
+      ```
+2. Resolving Paths
+    + The **path.resolve()** method resolves a sequence of paths or path segments into an absolute path.
+    + This is useful for determining the full path to a file or directory:
+    + ```javascript
+        const path = require('path');
+        const absolutePath = path.resolve('folder', 'file.txt');
+        console.log(absolutePath);
+        // Output depends on the current working directory
+      ```
+3. Getting File Name and Extension
+    + You can use **path.basename()** to extract the file name from a path and **path.extname()** to get the file extension:
+    + ```javascript
+        const path = require('path');
+        const filePath = '/path/to/myfile.txt';
+        const fileName = path.basename(filePath); // 'myfile.txt'
+        const fileExtension = path.extname(filePath); // '.txt'
+      ```
+4. Normalizing Paths
+    + The **path.normalize()** method normalizes a path, resolving any '..' or '.' segments to their actual directory names:
+    + ```javascript
+        const path = require('path');
+        const normalizedPath = path.normalize('/path/to/../myfolder/./myfile.txt');
+        console.log(normalizedPath);
+        // Output: '/path/myfolder/myfile.txt'
+      ```
+5. Parsing Paths
+    + The **path.parse()** method returns an object containing the individual components of a path, such as the directory, base, extension, and name:
+    + ```javascript
+        const path = require('path');
+        const filePath = '/path/to/myfile.txt';
+        const pathInfo = path.parse(filePath);
+        console.log(pathInfo);
+        /* Output:
+        {
+          root: '/',
+          dir: '/path/to',
+          base: 'myfile.txt',
+          ext: '.txt',
+          name: 'myfile'
+        }
+        */
+      ```
 
