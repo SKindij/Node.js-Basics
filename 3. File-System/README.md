@@ -60,12 +60,30 @@
         });
       ```
 
+> _When working with file operations, it's essential to handle errors gracefully, as shown in the examples above. Always check for errors in the callback functions._
 
+You can use the **fs.existsSync()** method to check if a file exists before attempting to read from or write to it.
+```javascript
+  if (fs.existsSync('example.txt')) {
+    console.log('File exists');
+  } else {
+    console.log('File does not exist');
+  }
+```
 
-When working with the file system module, you need to handle errors that may occur, such as file not found or file permissions errors.
-
-You can use the file system module's fs.existsSync() method to check if a file exists before attempting to read from or write to it.
+When working with large files, it is recommended to use **fs.createReadStream()** and **fs.createWriteStream()** methods, which allow you to stream data to and from a file in chunks, instead of loading the entire file into memory.
+```javascript
+  const fs = require('fs');
+  const readStream = fs.createReadStream('largeFile.txt');
+  const writeStream = fs.createWriteStream('copyOfLargeFile.txt');
+  // we use pipe() to efficiently copy the file
+  readStream.pipe(writeStream);
+  
+  readStream.on('end', () => {
+    console.log('File copied successfully');
+  });
+```
 
 Node.js also provides the path module, which allows you to work with file paths and directories in a cross-platform way.
 
-When working with large files, it is recommended to use the file system module's fs.createReadStream() and fs.createWriteStream() methods, which allow you to stream data to and from a file in chunks, instead of loading the entire file into memory.
+
