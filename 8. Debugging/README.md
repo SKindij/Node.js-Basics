@@ -174,33 +174,43 @@ In summary, ESLint is a valuable tool for maintaining code quality and consisten
 
 - - -
 
-## An error in Node.js is any instance of the Error object.
-&emsp;**Built-in error classes:**
-  + ReferenceError (_an attempt to reach a non-existent reference_), 
-  + RangeError (_occurs when a numeric variable or parameter is outside the permissible range_), 
-  + TypeError (_occurs when an invalid type for a variable or parameter_), 
-  + URIError (_!parameters_), 
-  + EvalError (_occurs in global function eval_) 
-  + SyntaxError (_occurs when parsing the source code of the eval function_).
+# Understanding Errors in Node.js
 
-> Here are some **examples of operational errors** in Node.js:
-> > * The API request is not executed for some reason (for example, the server is down or the speed limit is exceeded).
-> > * The user sends invalid data to the server, such as an invalid phone number or email address.
-> > * The connection to the database is lost, possibly due to a faulty network connection.
-> > * The OS cannot fulfill your request to open or write to the file.
+In Node.js, errors are instances of the Error object or its subclasses, and they play a crucial role in handling exceptional situations in your applications.\
+Here's a closer look at built-in error classes and common operational errors:
 
-> **Handling operational errors** includes considering whether an operation might fail, why it might fail, and what to do if it does.
-> > 1. Report the error to the stack
-> > 2. Repeat the operation
-> > 3. Send the error to the client
-> > 4. Interrupt the program.
+## Built-in Error Classes:
 
-&emsp;In addition to the built-in Error object classes, you can create your own to better represent the types of errors that may occur in your application. For example, you might have a **ValidationError** class for errors that occur when validating user input, a **DatabaseError** class for database operations, a **TimeoutError** class for operations that run out of assigned timeouts, and so on.
+Node.js provides several built-in error classes, each serving specific purposes:
 
-&emsp;Basically, **exceptions** are synchronous errors, and **rejections** are asynchronous errors.<br>
-> >   There are four main error reporting strategies in Node.js: <br>
-> >    \* try…catch blocks; * Callbacks; * Promises; * Event emitters.
+#### ReferenceError
+
+Occurs when you attempt to access a non-existent reference, like an undeclared variable.
+
+```javascript
+  try {
+    console.log(nonExistentVariable);
+  } catch (error) {
+    console.error(error instanceof ReferenceError); // =>> true
+    console.error(error); // =>> ReferenceError: nonExistentVariable is not defined
+  }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - - -
-
-
