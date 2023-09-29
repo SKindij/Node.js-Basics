@@ -1,22 +1,59 @@
-# Debugging Node.js applications using built-in and third-party tools
+# Debugging Node.js applications
 
-Debugging is the process of finding and fixing errors or bugs in software.
+Debugging is a critical process in software development that involves identifying and resolving errors or bugs in your code. In Node.js, you have access to both built-in and third-party debugging tools to streamline this process and ensure your applications run smoothly.
 
-Node.js provides built-in debugging functionality through the --inspect flag and the Chrome Developer Tools.
+## Built-in tools
 
-The --inspect flag enables remote debugging using a debugger client like Chrome DevTools or Visual Studio Code.
+### Built-in Debugging with --inspect:
 
-To use the --inspect flag, you can start your Node.js application with node --inspect app.js.
+Node.js provides built-in debugging functionality through the ``--inspect`` flag. This flag enables remote debugging using debugger clients like Chrome DevTools or Visual Studio Code.\
+To initiate debugging, follow these steps:
+1. Type in the terminal: ``node --inspect app.js``
+2. This will start your application and expose a debugging endpoint.
 
-The Chrome Developer Tools can be used to debug Node.js applications by navigating to chrome://inspect in the Chrome browser.
+### Using Chrome Developer Tools:
 
-You can use the debugger statement in your code to set a breakpoint and pause the execution of your code at a certain point.
+The Chrome Developer Tools can be leveraged to debug Node.js applications effectively.\
+Here's how you can do it:
+1. Open Google Chrome and navigate to chrome://inspect.
+2. Under the "Remote Target" section, you'll find your Node.js application listed.
+3. Click "Inspect" to open the DevTools debugger.
+4. You can set breakpoints, inspect variables, and step through your code as it executes.
 
-The console.log() method can be used to output messages to the console and help with debugging.
+### Adding Breakpoints and Using console.log():
 
-Third-party debugging tools for Node.js include Visual Studio Code, WebStorm, and Node Inspector.
+Breakpoints and console.log() statements are essential tools for debugging Node.js applications. You can place breakpoints in your code to pause execution at specific points and inspect the program's state.
 
-In addition to traditional debugging, Node.js also supports profiling and memory monitoring to help identify performance issues.
+```javascript
+  function divide(a, b) {
+    // place a breakpoint here
+    debugger;
+    console.log(`Dividing ${a} by ${b}`);
+    return a / b;
+  }
+
+  const result = divide(10, 2);
+  console.log(`Result: ${result}`);
+```
+
+### Third-party Debugging Tools:
+
+While Node.js offers built-in debugging capabilities, several third-party tools can enhance your debugging experience:
+
+
+
+
+
+
+
+
+## Third-party tools
+
+
+
+
+
+
 
 - - -
 
