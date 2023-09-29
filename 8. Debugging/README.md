@@ -183,7 +183,7 @@ Here's a closer look at built-in error classes and common operational errors:
 
 Node.js provides several built-in error classes, each serving specific purposes:
 
-#### ReferenceError
+### ReferenceError
 
 Occurs when you attempt to access a non-existent reference, like an undeclared variable.
 
@@ -196,11 +196,45 @@ Occurs when you attempt to access a non-existent reference, like an undeclared v
   }
 ```
 
+### RangeError
 
+Happens when a numeric variable or parameter goes outside its permissible range.
 
+```javascript
+  try {
+    const arr = new Array(-1);
+  } catch (error) {
+    console.error(error instanceof RangeError); // =>> true
+    console.error(error); // =>> RangeError: Invalid array length
+  }
+```
 
+### TypeError
 
+Arises when you use an invalid type for a variable or parameter.
 
+```javascript
+  try {
+    const num = 'not a number';
+    num.toFixed(2);
+  } catch (error) {
+   console.error(error instanceof TypeError); // =>> true
+   console.error(error); // =>> TypeError: num.toFixed is not a function
+  }
+```
+
+### URIError
+
+Occurs when there are issues with URI-related operations.
+
+```javascript
+  try {
+    decodeURIComponent('%');
+  } catch (error) {
+    console.error(error instanceof URIError); // =>> true
+    console.error(error); // =>> VM40:5 URIError: URI malformed
+  }
+```
 
 
 
