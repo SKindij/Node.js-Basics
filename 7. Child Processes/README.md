@@ -72,7 +72,35 @@ Child processes can communicate with their parent process and vice versa using a
   process.send('Hello, parent!');
 ```
 
-#### fork()
+### fork()
+
+The fork() method of the child_process module is used to create a new child process that is a copy of the current process. It's commonly used for creating multiple child processes that can communicate with each other.
+
+```javascript
+  const { fork } = require('child_process');
+
+  const child1 = fork('child1.js');
+  const child2 = fork('child2.js');
+```
+
+### Synchronous and Asynchronous Execution
+
+The spawnSync() method of the child_process module can be used to synchronously spawn a child process and wait for it to exit. On the other hand, the spawn() method can be used to asynchronously spawn a child process and listen for events related to the child process's lifecycle.
+
+```javascript
+  const { spawnSync } = require('child_process');
+
+  const result = spawnSync('ls', ['-l', '/usr']);
+  console.log(result.stdout.toString());
+```
+
+In summary, the child_process module in Node.js empowers you to create, manage, and communicate with child processes, making it a versatile tool for various tasks, from running external commands to parallelizing workloads and handling inter-process communication. Properly understanding these methods and concepts can enhance your Node.js applications' functionality and performance.
+
+
+
+
+
+
 
 
 
