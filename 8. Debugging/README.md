@@ -236,7 +236,32 @@ Occurs when there are issues with URI-related operations.
   }
 ```
 
+### EvalError
 
+This error is deprecated and not commonly used. It occurs within the global function eval.
+
+### SyntaxError
+
+Happens when there are issues parsing the source code of the eval function.
+
+```javascript
+  try {
+    eval('invalid code');
+  } catch (error) {
+    console.error(error instanceof SyntaxError); // =>> true
+    console.error(error); // =>> SyntaxError: Unexpected identifier 'code'
+  }
+```
+
+## Operational Errors:
+
+Operational errors in Node.js typically relate to issues beyond code syntax and include scenarios like:
+- Failed API requests due to server issues or exceeded rate limits.
+- Invalid user input, such as an incorrect phone number or email address.
+- Lost database connections due to network problems.
+- Inability to open or write to a file due to permission issues.
+
+## Error Handling Strategies:
 
 
 
