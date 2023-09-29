@@ -36,24 +36,27 @@ Breakpoints and console.log() statements are essential tools for debugging Node.
   console.log(`Result: ${result}`);
 ```
 
-### Third-party Debugging Tools:
+## Third-party Debugging Tools:
 
 While Node.js offers built-in debugging capabilities, several third-party tools can enhance your debugging experience:
 
++ **Visual Studio Code (VS Code):** VS Code provides a feature-rich debugging experience for Node.js applications. It integrates seamlessly with the --inspect flag and offers a visual debugging interface.
++ **WebStorm:** WebStorm is a popular IDE for JavaScript and Node.js development. It includes powerful debugging features, making it a robust choice for debugging Node.js applications.
++ **Node Inspector:** Node Inspector is a standalone debugger for Node.js that provides a user-friendly interface for debugging. While not as popular as VS Code or WebStorm, it can be a useful tool in your debugging arsenal.
 
+### Profiling and Memory Monitoring:
 
+In addition to traditional debugging, Node.js supports profiling and memory monitoring to identify and resolve performance issues. Profiling tools like the built-in --inspect flag and third-party options can help you analyze CPU usage, memory leaks, and other performance-related problems.
 
+```bash
+  # Enable CPU profiling
+  node --inspect --prof app.js
 
+  # Enable memory profiling
+  node --inspect --heapsnapshot-near-heap-limit=100 --heapsnapshot-signal=USR2 app.js
+```
 
-
-
-## Third-party tools
-
-
-
-
-
-
+In summary, debugging Node.js applications is a crucial skill for developers. Whether you choose the built-in --inspect flag and Chrome DevTools or opt for third-party tools like Visual Studio Code or WebStorm, understanding how to set breakpoints, utilize console.log(), and profile your code will help you find and fix bugs efficiently, ensuring your applications run smoothly and efficiently.
 
 - - -
 
