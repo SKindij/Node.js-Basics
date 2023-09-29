@@ -114,11 +114,11 @@ This configuration will enforce the Airbnb JavaScript Style guide in your projec
 
 Prettier is a popular code formatter that enforces code formatting rules. When combined with ESLint, it ensures consistent code formatting alongside static analysis. You can install and use the eslint-config-prettier package to disable ESLint rules that conflict with Prettier.
 
-``npm install --save-dev eslint-config-prettier``
+> ``npm install --save-dev eslint-config-prettier``
 
 ```json
    {
-     "extends": "airbnb"
+     "extends": ["prettier"]
    }
 ```
 
@@ -126,20 +126,49 @@ Prettier is a popular code formatter that enforces code formatting rules. When c
 
 StandardJS is a strict and opinionated style guide that aims to minimize debates over coding styles. It provides a single configuration for ESLint that covers coding conventions, best practices, and code quality rules.
 
-``npm install --save-dev eslint-config-standard``
+> ``npm install --save-dev eslint-config-standard``
 
 ```json
    {
-     "extends": "standard"
+     "extends": ["standard"]
    }
 ```
 
+### Airbnb (with React)
 
+If you're working on React projects, you can extend the Airbnb style guide specifically designed for React applications. Install the eslint-config-airbnb package along with eslint-plugin-react.
 
+> ``npm install --save-dev eslint-config-airbnb eslint-plugin-react``
 
+```json
+   {
+     "extends": ["airbnb", "airbnb/hooks"]
+   }
+```
 
+### Google
 
+Google's JavaScript style guide is used extensively in the industry. You can use the eslint-config-google package to enforce Google's coding standards in your project.
 
+> ``npm install --save-dev eslint-config-google``
+
+```json
+   {
+     "extends": ["google"]
+   }
+```
+
+### TypeScript: 
+
+If you're using TypeScript, you can extend ESLint configurations with TypeScript-specific rules. The @typescript-eslint/eslint-plugin and @typescript-eslint/parser packages are commonly used in combination with other ESLint configurations.
+
+> ``npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser``
+
+```json
+   {
+     "extends": ["airbnb", "plugin:@typescript-eslint/recommended"]
+   }
+```
 
 In summary, ESLint is a valuable tool for maintaining code quality and consistency in your JavaScript projects. By configuring ESLint, you can catch potential issues early, enforce coding standards, and improve the overall quality of your codebase. The integration of popular configurations like Airbnb's style guide ensures that your code aligns with industry best practices.
 
