@@ -35,8 +35,38 @@ Piping is a powerful technique that simplifies the transfer of data from one str
   readableStream.pipe(writableStream);
 ```
 
+## Error Handling
 
+When working with streams, robust error handling is essential. You can listen for errors on both readable and writable streams using the **error** event. Additionally, you can use the ``on('data')`` event to detect errors in readable streams.
 
+```javascript
+  readableStream.on('error', (err) => {
+    console.error('Readable stream error:', err);
+  });
 
+  writableStream.on('error', (err) => {
+    console.error('Writable stream error:', err);
+  });
+```
 
+## Custom Transform Streams
 
+In addition to the built-in stream types, Node.js allows you to create custom streams using the ``stream.Transform class``. This is particularly useful when you need to implement custom data transformations as data is being read or written.
+
+```javascript
+  const { Transform } = require('stream');
+
+  const customTransformStream = new Transform({
+    transform(chunk, encoding, callback) {
+      // implement your custom transformation logic here
+      const modifiedChunk = chunk.toString().toUpperCase();
+      this.push(modifiedChunk);
+      callback();
+    },
+  });
+
+  // pipe data through the custom transform stream
+  readableStream.pipe(customTransformStream).pipe(writableStream);
+```
+
+In summary, streams and piping are powerful tools in Node.js for efficiently handling data. Whether you're reading from files, processing HTTP requests, or performing custom data transformations, Node.js streams provide a flexible and memory-efficient solution. Proper error handling and understanding the different types of streams will help you build robust and efficient applications.
