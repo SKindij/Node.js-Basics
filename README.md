@@ -10,7 +10,7 @@
 | 6. [Streams](https://github.com/SKindij/Node.js-Basics/tree/main/6.%20Streams)         | Implementing streams and piping in Node.js                 |
 | 7. [Child Processes](https://github.com/SKindij/Node.js-Basics/tree/main/7.%20Child%20Processes) | Spawning child processes in Node.js              |
 | 8. [Debugging](https://github.com/SKindij/Node.js-Basics/tree/main/8.%20Debugging)     | Debugging Node.js app using built-in and third-party tools |
-| 9. Express.js                                                                          | Introduction to Express.js web application framework       |
+| 9. [Express.js](https://github.com/SKindij/Node.js-Basics/tree/main/Express)           | Introduction to Express.js web application framework       |
 | 10. [MongoDB](https://github.com/SKindij/Database-Handbook-MongoDB-PostgreSQL/tree/main/MongoDB) | Using MongoDB database with Node.js              |
 | 11. [WebSockets](https://github.com/SKindij/Node.js-Basics/tree/main/11.%20WebSockets) | Implementing real-time communication using WebSockets      |
 | 12. [Authentication](https://github.com/SKindij/Node.js-Basics/tree/main/12.%20Authentication) | Implementing user authentication and authorization |
