@@ -45,23 +45,26 @@
 &emsp;MVC is a fundamental pattern in web development, but variations and extensions exist, such as MVVM (Model-View-ViewModel) and MVP (Model-View-Presenter), tailored to specific needs and frameworks. The choice of which pattern to use depends on the requirements and architecture of your project.
 
 
-## ROUTES
+## [ROUTES](https://github.com/SKindij/Node.js-Basics/tree/main/Express/ROUTES)
 
 **An example of a simple project on this topic:**
 
 ```go
 📁 ROUTES/
+│
 ├─ package.json
 ├─ app.js
+│
 ├─ 📁 controllers/
 │   ├─ comments.js
 │   ├─ users.js
 │   └─ root.js
+│
 └─ 📁 routes/
-       ├─ comments.js
-       ├─ users.js
-       ├─ root.js
-       └─ index.js
+    ├─ comments.js
+    ├─ users.js
+    ├─ root.js
+    └─ index.js
 ```
 
 
